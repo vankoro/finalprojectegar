@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${name_user}"></h1>
+<a href="/admin">Перейти на страницу администратора</a>
+<br>
+<form method="get" action="/print">
+    <input type="text" name="name">               <!--localhost:8080/print?name=-->
+    <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
